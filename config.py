@@ -21,6 +21,15 @@ class Config():
     # take a reference to the book <<Flask Framework Cookbook>>.
     # But the book only have the version of English.
 
+    # 更换session保存路径
+    # SESSION_TYPE = 'filesystem'
+    # SESSION_FILE_DIR = './flask_session'
+    # SESSION_FILE_THRESHOLD = 10  # 默认是500,大于设定值,会自动删除
+    # SESSION_FILE_MODE = 600  # 默认值,文件模式,读写执行
+    # SESSION_PERMANENT = False
+    # SESSION_USE_SIGNER = True  # 加密
+    # SESSION_KEY_PREFIX = 'session'
+
     @staticmethod
     def init_app(app):
         pass

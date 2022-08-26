@@ -14,7 +14,7 @@ manager.add_command("runserver", Server(
     use_debugger=True,
     use_reloader=True,
     host='0.0.0.0',
-    port=5000)
+    port=65534)
 )
 
 # 上下文处理器，定义用户当前是否登录状态，全局可访问
@@ -47,6 +47,5 @@ def internal_server_error(e):
 
 if __name__ == '__main__':
     # app.run(debug=True, port="65534", host="0.0.0.0")
-    manager.run()
-
     # python manage.py runserver -h 0.0.0.0 -p 65534
+    manager.run()

@@ -9,7 +9,7 @@ class Config():
     # QLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_RECORD_QUERIES = True
     a = os.environ
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@localhost:3306/blog?charset=utf8mb4"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:L_fly1335108246@localhost:3306/blog?charset=utf8mb4"
     ARTICLES_PER_PAGE = 10
     COMMENTS_PER_PAGE = 6
     SECRET_KEY = 'secret key to protect from csrf'

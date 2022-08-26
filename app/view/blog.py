@@ -36,7 +36,7 @@ def imgUpload():
         ext = fname.rsplit('.')[-1]
         # 生成一个uuid作为文件名
         fileName = str(uuid.uuid4()) + "." + ext
-        filePath = os.path.join("static/uploadImg/", fileName)
+        filePath = os.path.join("app/static/uploadImg/", fileName)
         file.save(filePath)
         return {
             'success': 1,
